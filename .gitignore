@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+
+# Build and temporary artifacts
+.codex-finalizer/
+.codex-pptx-build/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.tmp
