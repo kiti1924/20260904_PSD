@@ -2,142 +2,103 @@
 
 参照：Kikuchi_PSD2026_1.pptx。原稿の段落は、そのまま話す英語。見出しと時間の説明は読み上げない。
 
-ページは元の番号を保ち、説明の順だけを並べ替えている。元ファイル自体は変更していない。
+**本編10分＋質疑5分。** 参照PPTXの表示順をそのまま使う。本編は10枚、元17はQ&A画面。非表示の元3・6・9・11・13・15は読み上げない。元ファイル自体は変更していない。
 
-**推奨順：** 1、2、3、4、5、6、7、8、11、9、10、13、12、15、14、16、17。
+**本編順：** 1、2、4、5、7、8、10、12、14、16。その後に元17を表示して質疑へ。
 
-本文は約1,106語。毎分110〜120語なら読み上げ約9.2〜10.1分。図を示す間と切り替えを合計60〜90秒取ると、約10.2〜11.6分。
+本編は約918語（Q&Aの質問募集を除く）。毎分110〜120語なら発話のみ約7.7〜8.3分。残りを図の説明の間・切り替え・余裕に充てる。10分を超えないよう、練習では9分40秒前後を目標にする。
 
-AとBは代替案。全体を両方続けて読むものではない。図案と日本語の意図・注意点は[原稿と図案の比較資料](Kikuchi_PSD2026_1_scripts_and_figure_options.md)を参照。
+AとBは代替案。全体を両方続けて読むものではない。図案と質疑用図表は[本編10分・質疑5分の構成案](Kikuchi_PSD2026_1_10min_plan.md)を参照。
 
-| 話す順 | 元ページ | 内容 | 語数 | 読み上げ秒数（毎分120語） |
-|---:|---:|---|---:|---:|
-| 1 | 1 | Patterns Without Source | 35 | 18 |
-| 2 | 2 | A fictional scenario | 52 | 26 |
-| 3 | 3 | 寓話 | 59 | 30 |
-| 4 | 4 | Fiction → real problem | 53 | 26 |
-| 5 | 5 | Big Problem | 51 | 26 |
-| 6 | 6 | Why PWS Cup? | 57 | 28 |
-| 7 | 7 | Minimum PWS Cup mechanics | 74 | 37 |
-| 8 | 8 | Reconstruction | 78 | 39 |
-| 9 | 11 | PWSCUP overview | 71 | 36 |
-| 10 | 9 | Key opportunity | 72 | 36 |
-| 11 | 10 | H1 result | 78 | 39 |
-| 12 | 13 | 仮説1の図と得られた示唆 | 82 | 41 |
-| 13 | 12 | H2 result | 85 | 42 |
-| 14 | 15 | 仮説2の図と得られた示唆 | 80 | 40 |
-| 15 | 14 | Limits | 75 | 38 |
-| 16 | 16 | Take-away / Ask | 72 | 36 |
-| 17 | 17 | Q&A | 32 | 16 |
+| 本編順 | 元ページ | 内容 | 語数 | 時間枠 | 終了目安 |
+|---:|---:|---|---:|---:|---:|
+| 1 | 1 | Patterns Without Source | 27 | 0:15 | 0:15 |
+| 2 | 2 | A fictional scenario | 74 | 0:45 | 1:00 |
+| 3 | 4 | Fiction → real problem | 65 | 0:40 | 1:40 |
+| 4 | 5 | Big Problem | 58 | 0:30 | 2:10 |
+| 5 | 7 | Minimum PWS Cup mechanics | 105 | 1:15 | 3:25 |
+| 6 | 8 | Reconstruction | 121 | 1:30 | 4:55 |
+| 7 | 10 | H1 result | 132 | 1:30 | 6:25 |
+| 8 | 12 | H2 result | 146 | 1:45 | 8:10 |
+| 9 | 14 | Limits | 101 | 1:00 | 9:10 |
+| 10 | 16 | Take-away / Ask | 89 | 0:50 | 10:00 |
+
+表の時間枠は発話と図を示す間を含む。語数から機械的に割り当てた読み上げ秒数ではない。
+
 
 ---
 
-## 01　元スライド01：Patterns Without Source
+## 本編01　元スライド01：Patterns Without Source
 
-Good afternoon. I am Hinata Kikuchi. Today I will present our meta-analysis of PWS Cup 2025. We ask what researchers can learn about anonymization and attacks when most participants do not release their source code.
-
----
-
-## 02　元スライド02：A fictional scenario
-
-Let me begin with a fictional scenario. A company shares an anonymized dataset. A researcher tests the release and finds that some individuals can be identified. The researcher reports the finding to explain the privacy risk. So far, this seems like a useful contribution to privacy research. But what might happen next?
+Good afternoon. I am Hinata Kikuchi. Today I will discuss what we can learn from PWS Cup 2025 when most participants do not release their source code.
 
 ---
 
-## 03　元スライド03：寓話
+## 本編02　元スライド02：A fictional scenario
 
-In the story, the company faces reputational damage after the report. Other organizations see the reaction and become less willing to share their methods. The researcher has revealed a privacy problem, yet future cases become harder to study. The point of the story is the possible disclosure dilemma. It does not establish why any particular team withheld its code.
-
----
-
-## 04　元スライド04：Fiction → real problem
-
-Let us move from the story to our actual case. In PWS Cup 2025, only two teams released code. However, teams described their approaches in posters and short talks, and the competition published their outcomes. We therefore had some evidence about strategies, but limited access to implementations. Our study starts from this gap.
+Let me begin with a fictional scenario. A company shares an anonymized dataset. A researcher finds a successful re-identification attack and publishes the result. The company then faces reputational damage. Other organizations may become less willing to disclose their methods, making future cases harder to study. This story illustrates a possible disclosure dilemma. It does not establish why any particular organization withheld its code. Now let us turn to the evidence we actually had.
 
 ---
 
-## 05　元スライド05：Big Problem
+## 本編03　元スライド04：Fiction → real problem
 
-Our central question is this: when we observe only broad descriptions of methods and their outcomes, can we still extract meaningful patterns? More specifically, can we connect strategy choices to utility and disclosure risk? We aim to identify patterns that deserve further testing, while making the limits of the evidence clear.
-
----
-
-## 06　元スライド06：Why PWS Cup?
-
-PWS Cup provides a useful case because the descriptions and outcomes belong to the same competition. Teams face shared evaluation rules, and their presentations describe the strategies behind their submissions. We could reconstruct strategy features for twenty of the twenty-four teams. This creates an opportunity to compare choices and outcomes, even though most source code remains unavailable.
+In PWS Cup 2025, only two teams released code. However, posters and short talks described their strategies, and the competition published scores and attack outcomes. We could reconstruct strategy features for twenty of the twenty-four teams. These descriptions and outcomes belong to the same competition, under shared evaluation rules. That gives us a concrete setting in which to study what incomplete information can still reveal.
 
 ---
 
-## 07　元スライド07：Minimum PWS Cup mechanics
+## 本編04　元スライド05：Big Problem
 
-The competition uses synthetic health data generated by Synthea. Each team receives a hidden sample, B, containing ten thousand records from a population, A, of one hundred thousand records. The team submits anonymized data, C, and a stroke-risk prediction model, D. Other teams receive A, C, and D, and try to identify which records belonged to B. The defense receives utility and anonymization scores. The attack receives a score based on correct membership inferences.
-
----
-
-## 08　元スライド08：Reconstruction
-
-We reconstructed strategies from posters and short talks, then encoded them as categorical features. On the defense side, we coded twenty teams using features such as the starting data, synthesis, noise, optimization, and swapping. On the attack side, nineteen teams had usable attack submissions. We distinguished the attack target from the use of an attacker-trained scoring model. The numbers show how many teams fall into each category. These are reconstructed descriptions, rather than direct inspections of their code.
+Our central question is whether broad descriptions and outcomes can reveal meaningful patterns. We examine it at two levels. First, which strategy features are associated with utility and anonymization scores? Second, how does the pairing of defense and attack strategies relate to exposed-record counts? Both questions are exploratory. I will briefly explain the competition before showing the analysis.
 
 ---
 
-## 09　元スライド11：PWSCUP overview
+## 本編05　元スライド07：Minimum PWS Cup mechanics
 
-Two distinctions help us interpret the analysis. Base describes the starting point for the released records. Synthesis describes whether the method generates new records. Team two used a Gaussian copula with B as its base, while team eighteen used a Synthea-based approach with an alternative base. Both used synthesis. On the attack side, using the released prediction model is different from training a membership-scoring model. We encode these as separate choices.
-
----
-
-## 10　元スライド09：Key opportunity
-
-We can now connect the coded strategies to outcomes at two levels. H1 examines team scores, focusing on utility and anonymization. We summarize differences with Hedges' g, a standardized difference between groups, and check them using sparse regression models selected by AICc. H2 examines each attacker-victim pair and models the number of exposed records. It uses negative binomial regression, with standard errors clustered by both attacker and victim. Both analyses are exploratory.
+The competition uses synthetic health data generated by Synthea. The organizer creates a population, A, of one hundred thousand records and gives each team a hidden sample, B, of ten thousand records. The team submits anonymized data, C, and a stroke-risk prediction model, D. The training data for D can differ between teams. Other teams receive A, C, and D, and try to identify which population records belonged to B. This is the membership inference task. The defense receives utility and anonymization scores, while attack scores reflect correct membership inferences. The competition asks participants to take both roles, giving us outcomes for many attacker-victim pairs.
 
 ---
 
-## 11　元スライド10：H1 result
+## 本編06　元スライド08：Reconstruction
 
-H1 asks whether generation or reconstruction is associated with better utility and anonymization outcomes. The clearest shared pattern is synthesis. Its Hedges' g is about one point two six for utility and one point zero one for anonymization. Starting from an alternative base has a larger association with utility, at about one point five five. The features therefore relate differently to the two outcomes. These are associations among twenty teams in this competition, rather than estimated causal effects.
-
----
-
-## 12　元スライド13：仮説1の図と得られた示唆
-
-A large effect for one feature may reflect other choices that occur alongside it. We therefore checked the univariate patterns using sparse regression models selected by AICc. For utility components, the selected models retained Base or Synthesis. For anonymization, they included Synthesis, Post-processing, and their interaction. Optimization had a large univariate association with utility, but did not remain in the selected models. This illustrates why we use the models as a diagnostic check, rather than treating each feature as an independent cause.
+We reconstructed the strategies from posters and short talks and encoded them as categorical features. We had twenty teams for the defense analysis and nineteen with usable attack submissions. Two distinctions are especially important. Base describes the starting point for the released records. Synthesis describes whether the method generates new records. Team two used a Gaussian copula with B as its base. Team eighteen used a Synthea-based approach with an alternative base. Both used synthesis. We also coded choices such as noise, optimization, and swapping. On the attack side, using the released prediction model is different from training an attacker-side membership-scoring model. We kept those choices separate. This coding makes the descriptions comparable, while still leaving uncertainty about the exact implementations.
 
 ---
 
-## 13　元スライド12：H2 result
+## 本編07　元スライド10：H1 result
 
-H2 asks whether disclosure risk depends on the pairing of defense and attack strategies. We analyzed three hundred and sixty-one ordered pairs. When attackers also used the released prediction model, the combined incidence rate ratios ranged from about zero point six one to zero point seven zero across the four victim features. These values compare expected exposed-record counts with the joint reference in each model. The pairing matters, but these combinations still remain below their respective references. We interpret this as partial support for H2.
-
----
-
-## 14　元スライド15：仮説2の図と得られた示唆
-
-The interaction term and the combined effect answer different questions. For synthesis and attack target, the interaction incidence rate ratio is about one point one eight. The combined estimate is about zero point six one. The combined estimate includes both main effects as well as the interaction, so an interaction above one does not imply a combined estimate above one. For the interactions with attacker-trained scoring models, clustered standard errors were not estimable. We therefore leave those inferential questions open.
+H1 asks whether generation or reconstruction is associated with better utility and anonymization outcomes. We summarize group differences with Hedges' g, a standardized effect size. Positive values favor the second category shown in each label. Please look first at synthesis. Its effect size is about one point two six for utility and one point zero one for anonymization. Both scores are higher among teams using synthesis. An alternative base has an even larger association with utility, about one point five five, but a smaller association with anonymization. We also checked the patterns using sparse regression models selected by AICc. Related associations remained visible, although correlated choices were difficult to separate. These results are consistent with H1 in this competition. They do not establish a causal advantage or remove the general privacy-utility trade-off.
 
 ---
 
-## 15　元スライド14：Limits
+## 本編08　元スライド12：H2 result
 
-There are three important limits. We have only twenty coded teams. Their strategy choices are correlated, and we reconstructed those choices from descriptions rather than checking most implementations. The results therefore provide exploratory associations. They do not establish causal superiority or general privacy guarantees. For some H2 interactions, the two-way clustered standard errors were not estimable, so we do not make inferential claims about those interactions. These limits also suggest what future competitions should record.
-
----
-
-## 16　元スライド16：Take-away / Ask
-
-Our answer to the opening question is that coarse descriptions can reveal patterns worth testing. To make future analyses stronger, we propose a short strategy questionnaire using a common set of definitions. It could ask where the released records came from, whether synthesis or optimization was used, and what the attacker targeted. Teams could also add a short explanation. This would make the evidence easier to compare across teams and future competitions.
+H2 asks whether disclosure risk depends on the pairing of defense and attack strategies. We analyzed three hundred and sixty-one ordered pairs using a negative binomial model for exposed-record counts. Since the same attackers and victims appear repeatedly, we clustered standard errors in both directions. The figure focuses on attackers who also used the released prediction model. The combined incidence rate ratios range from about zero point six one to zero point seven zero across the four defense features. An incidence rate ratio compares expected counts. One is the reference, and values below one indicate fewer expected exposed records. Each row comes from a separate model with its own joint reference. We found interactions involving attack target, while these combined estimates remained below their references. This gives partial support for H2. Some other interactions had non-estimable clustered standard errors, so we leave those inferential questions open.
 
 ---
 
-## 17　元スライド17：Q&A
+## 本編09　元スライド14：Limits
 
-Thank you for listening. Our analysis data and code are available through the link on this slide. I would be happy to take questions, including suggestions on what future competitions should record.
+We should keep the scope of the evidence clear. There are only twenty coded teams, and their design choices are correlated. We reconstructed the methods from descriptions rather than inspecting most source code. So these associations cannot isolate causal effects or establish general privacy guarantees. The attack results also concern the attacks observed in this competition. For some H2 interactions, the clustered standard errors could not be estimated. That is an unresolved inference problem, not evidence that no interaction exists. The contribution is to identify patterns and make their limits explicit. Stronger conclusions need better records of strategies and further comparisons.
+
+---
+
+## 本編10　元スライド16：Take-away / Ask
+
+Our answer to the opening question is that coarse descriptions can reveal patterns worth testing. To improve the evidence, we propose collecting a short strategy questionnaire with future competition submissions. It could record the source of the released records, synthesis and optimization choices, and what the attacker targeted, with space for a short explanation. Common definitions would make methods easier to compare across teams and future events. The goal is to preserve enough information for stronger follow-up analysis, while keeping the request practical for participants. Thank you for listening.
+
+---
+
+## 質疑5分　元スライド17：Q&A
+
+I would be happy to take questions. Our analysis data and code are available through the link on this slide.
 
 ---
 
 ## 練習時の確認
 
-- 2・3枚目は合わせて短い一つの物語として話す。冒頭のfictionalを省かない。
+- 元2枚目の1枚で寓話の結末まで話す。冒頭のfictionalを省かない。非表示の元3は開かない。
 - 10枚目はSynthesis、Baseの順に図を指す。棒の全数値を追加で読み上げない。
 - 12枚目はIRRの基準1を示してから0.61を指す。各行は別モデルの比較。
-- 15枚目はinteractionとcombinedを区別して発音する。
-- 時間を短縮する場合は3を2へ、11を8へ統合し、13・15を補足に回す。削除後のつなぎも声に出して確認する。
+- 交互作用の詳細、全特徴量の人数、回帰の選択結果は質問が来たときに補足する。
+- 本編最後の元16で結論を述べ、10分以内で止める。元17から5分の質疑。
+- 質疑用Q1〜Q5は質問に応じて選ぶ。5枚を順に説明しない。
